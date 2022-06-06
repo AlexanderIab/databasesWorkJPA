@@ -8,16 +8,20 @@ import java.util.List;
 
 @ToString(callSuper = true)
 @RequiredArgsConstructor
+@Getter
+@Setter
 @Entity
 @EqualsAndHashCode(callSuper = true)
 public class GroupAlpinist extends BaseId {
-    @Setter
     private boolean closed;
     @OneToMany(mappedBy = "groupAlpinist", cascade = CascadeType.PERSIST)
     private final List<Alpinist> alpinists = new ArrayList<>();
-    @Column(unique = true, nullable = false)
+    @JoinColumn(unique = true, nullable = false)
     @NonNull
+    @OneToOne
     private Mount mount;
+
+    public GroupAlpinist(){}
 
     public void addAlpinist(Alpinist... alps) {
         if (closed) {

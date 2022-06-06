@@ -17,9 +17,10 @@ public class Alpinist extends BaseId {
     @Column(unique = true, nullable = false)
     private String name;
     @NonNull
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     private String address;
-    @Setter
     @ManyToOne
     private GroupAlpinist groupAlpinist;
+
+    public Alpinist(){}
 }

@@ -1,7 +1,6 @@
 package base;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
 
 @ToString(callSuper = true)
@@ -18,7 +17,12 @@ public class Mount extends BaseId {
     @NonNull
     private String country;
     @Column(unique = true, nullable = false)
-    private final int height;
+    @NonNull
+    private int height;
+    @OneToOne(cascade = CascadeType.PERSIST, mappedBy = "mount")
     private GroupAlpinist groupAlpinist;
+
+    public Mount(){
+    }
 
 }
