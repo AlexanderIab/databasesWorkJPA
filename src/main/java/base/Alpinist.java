@@ -5,11 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import lombok.*;
 
-
 @ToString(callSuper = true)
 @Getter
 @Setter
-@EqualsAndHashCode(callSuper = true)
 @RequiredArgsConstructor
 @Entity
 public class Alpinist extends BaseId {

@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
 @RequiredArgsConstructor
 @Getter
 @Setter
@@ -22,7 +21,6 @@ public class Mount extends BaseId {
     @OneToOne(cascade = CascadeType.PERSIST, mappedBy = "mount")
     private GroupAlpinist groupAlpinist;
 
-    public Mount(){
-    }
+    public Mount(){}
 
 }

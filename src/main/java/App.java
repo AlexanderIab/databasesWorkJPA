@@ -1,4 +1,3 @@
-
 import base.Alpinist;
 import base.GroupAlpinist;
 import base.Mount;
@@ -49,7 +48,5 @@ public class App {
         manager.getTransaction().commit();
 
         manager.close();
-
-
     }
 }

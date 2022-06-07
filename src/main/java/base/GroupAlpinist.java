@@ -2,7 +2,6 @@ package base;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +10,6 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@EqualsAndHashCode(callSuper = true)
 public class GroupAlpinist extends BaseId {
     private boolean closed;
     @OneToMany(mappedBy = "groupAlpinist", cascade = CascadeType.PERSIST)
