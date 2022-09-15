@@ -32,7 +32,7 @@ public class App {
         group2.addAlpinist(alpinist4, alpinist5, alpinist9, alpinist10);
         group3.addAlpinist(alpinist6, alpinist7, alpinist11);
 
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("exam4Alpinist");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("AlpinistJPA");
 
         EntityManager manager = factory.createEntityManager();
 
