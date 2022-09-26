@@ -1,5 +1,5 @@
 # DatabasesWorkJPA
 
-1) Проект с использованием: Maven, JPA, Lombok
-2) Объектная модель Альпинист, Гора, Группа (набор в группу закрывается, есть максимальная вместимость) для восхождения на гору.
-3) Итог: 3 таблицы: Алпинист, Группа, Гора 
+1) Project using: Maven, JPA, Lombok
+2) Object model: Alpinist, Mount, GroupAlpinist (enrollment in the group is closed, there is a maximum capacity) for climbing the mount.
+3) Total 3 tables: Alpinist, Mount, GroupAlpinist
