@@ -12,7 +12,7 @@
         <class>base.Mount</class>
 
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/exam4"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/DBwork"/>
             <property name="jakarta.persistence.jdbc.user" value="userName"/>
             <property name="jakarta.persistence.jdbc.password" value="password"/>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
