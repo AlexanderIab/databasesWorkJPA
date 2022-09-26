@@ -5,6 +5,10 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
+
+/**
+ * @author Alexander Iablonski
+ * */
 public class App {
     public static void main(String[] args) {
         Alpinist alpinist1 = new Alpinist("Paul", "America");
