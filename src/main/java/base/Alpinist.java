@@ -5,6 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import lombok.*;
 
+
+/**
+ * @author Alexander Iablonski
+ * */
 @ToString(callSuper = true)
 @Getter
 @Setter
