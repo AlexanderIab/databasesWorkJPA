@@ -3,6 +3,10 @@ package base;
 import jakarta.persistence.*;
 import lombok.*;
 
+
+/**
+ * @author Alexander Iablonski
+ * */
 @ToString(callSuper = true)
 @RequiredArgsConstructor
 @Getter
