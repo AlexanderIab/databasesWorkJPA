@@ -5,6 +5,9 @@ import lombok.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Alexander Iablonski
+ * */
 @ToString(callSuper = true)
 @RequiredArgsConstructor
 @Getter
