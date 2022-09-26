@@ -6,6 +6,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import lombok.ToString;
 
+
+/**
+ * @author Alexander Iablonski
+ * */
 @ToString
 @MappedSuperclass
 public abstract class BaseId {
